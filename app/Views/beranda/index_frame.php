@@ -24,6 +24,10 @@
 			<h3 class="text-center">Framework PHP : CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h3>
 			<h3 class="text-center">Framework CSS : Bootstram 4.6.2</h3>
 			<p class="text-center">Situs ini akan menampilkan catatan singkat terkait Codeigniter 4, Datatables Server Side juga tips dan trik tentang website</p>
+			<p class="text-center">Isi folder dari situs ini dapat dilihat di : https://github.com/ny0n9/winston atau dapat di download dengan perintah :</p>
+			<p>
+			<pre class="text-center"><code>git clone https://github.com/ny0n9/winston.git</code></pre>
+			</p>
 		</div>
 	</article>
 </section>

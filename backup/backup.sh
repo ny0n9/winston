@@ -28,7 +28,7 @@ cp -av app/Views/Auth backup/app/Views/
 cp -av app/Views/beranda backup/app/Views/
 cp -av app/Views/layout backup/app/Views/
 
-cp -av add*.php test*.php backup.sh dot.htaccess backup/
+cp -av add*.php test*.php backup.sh ci4-update.sh dot.htaccess backup/
 rm -fv backup/app/Controllers/Home.php
 rm -fv backup/app/Views/welcome_message.php
 clear
