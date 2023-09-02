@@ -1,0 +1,16 @@
+npm install uglifycss -g
+npm install uglify-js -g
+
+CSS
+1. copy bootstrap.min.css ke bs462-wins.min.css
+2. uglifycss bs462-navbar.css > bs462-navbar.min.css
+3. hapus baris terakhir dari bs462-wins.min.css yaitu ;
+    /*# sourceMappingURL=bootstrap.min.css.map */
+4. gabungkan isi bs462-navbar.min.css ke akhir file bs462-wins.min.css tanpa baris baru
+
+JS
+1. copy bootstrap.bundle.min.js ke bs462-wins.min.js
+2. uglifyjs bs462-navbar.js -o bs462-navbar.min.js
+3. hapus baris terakhir dari bs462-wins.min.js yaitu ;
+    //# sourceMappingURL=bootstrap.bundle.min.js.map
+4. gabungkan isi bs462-navbar.min.js ke akhir file bs462-wins.min.js tanpa baris baru

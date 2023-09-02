@@ -1,0 +1,35 @@
+Hanya Animasi cube_over yang harus menyertakan jquery-migrate-1.4.1.min.js
+Selain itu cukup menggunakan jquery-3.6.0.min.js
+Atau semuanya menggunakan jquery-2.2.4.min.js
+
+<link rel="stylesheet" type="text/css" href="../winslider/effects/cube_over/style.css" />
+
+<div id="wowslider-container1" role="slider">
+	<div class="ws_images"><ul>
+		<li><a href="http://localhost/php_bootstrap" target="_blank"><img src="../assets/img/slide01-2000x1125.jpg" alt="slide01-2000x1125" title="slide01-2000x1125" id="wows1_0"></a></li>
+		<li><a href="http://localhost/php_bootstrap" target="_blank"><img src="../assets/img/slide02-2000x1125.jpg" alt="jquery image slider" title="slide02-2000x1125" id="wows1_1"></a></li>
+		<li><a href="http://localhost/php_bootstrap" target="_blank"><img src="../assets/img/slide04-2000x1125.jpg" alt="slide04-2000x1125" title="slide04-2000x1125" id="wows1_2"></a></li>
+	</ul></div>
+	<div class="ws_bullets">
+		<div>
+			<a href="#" title="slide01-2000x1125"><span>
+			<img src="../assets/img/slide01-2000x1125.jpg" alt="slide01-2000x1125" style="width: 85px; height: 48px;">1</span>
+			</a>
+			<a href="#" title="slide02-2000x1125"><span>
+			<img src="../assets/img/slide02-2000x1125.jpg" alt="slide02-2000x1125" style="width: 85px; height: 48px;">2</span>
+			</a>
+			<a href="#" title="slide04-2000x1125"><span>
+			<img src="../assets/img/slide04-2000x1125.jpg" alt="slide04-2000x1125" style="width: 85px; height: 48px;">3</span>
+			</a>
+		</div>
+	</div>
+	<div class="ws_script" style="position:absolute;left:-99%"></div>
+	<div class="ws_shadow"></div>
+</div>	
+
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript" src="../winslider/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../winslider/wowslider.js"></script>
+<script type="text/javascript" src="../winslider/effects/cube_over/script.js"></script>

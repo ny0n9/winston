@@ -1,0 +1,7 @@
+Ini adalah gabungan dari :
+1. css/bootstrap.min.css
+2. css/bs462-navbar.min.css
+3. css/scroll_top.min.css
+4. bs462-style.min.css
+
+dengan menghilangkan : /*# sourceMappingURL=bootstrap.min.css.map */ di akhir file css/bootstrap.min.css
