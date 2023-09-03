@@ -10,9 +10,10 @@ rm -fv app/Config/Routes.php
 rm -fv app/Config/Routing.php
 rm -fv app/Config/Validation.php
 rm -fv app/Common.php
-cp -av composer.* builds phpunit.xml.dist preload.php ../
 cp -av app ../
 cp -av vendor ../
 cp -av tests ../
+cp -av composer.* builds phpunit.xml.dist preload.php ../
+
 cd ../
 rm -rf ci4-update
