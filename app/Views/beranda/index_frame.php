@@ -8,17 +8,6 @@
 
 <?= $this->section('pageStyles'); ?>
 <!-- Isi CSS tambahan disini -->
-<style>
-	pre {
-		margin-top: 0;
-		margin-bottom: 16px;
-	}
-
-	code {
-		overflow-x: auto;
-		overflow-y: hidden;
-	}
-</style>
 <?= $this->endSection(); ?><!-- Section pageStyles -->
 
 <?= $this->section('pageMenu'); ?>
