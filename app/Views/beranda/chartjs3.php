@@ -32,18 +32,10 @@
 			<div class="card card-primary">
 				<div class="card-header">
 					<h3 class="card-title">Area Chart</h3>
-					<div class="card-tools">
-						<button type="button" class="btn btn-tool" data-card-widget="collapse">
-							<i class="fa fa-minus"></i>
-						</button>
-						<button type="button" class="btn btn-tool" data-card-widget="remove">
-							<i class="fa fa-times"></i>
-						</button>
-					</div>
 				</div>
 				<div class="card-body">
 					<div class="chart">
-						<canvas id="areaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+						<canvas id="areaChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
 					</div>
 				</div><!-- /.card-body -->
 			</div><!-- /.card -->
@@ -51,34 +43,18 @@
 			<div class="card card-danger">
 				<div class="card-header">
 					<h3 class="card-title">Doughnut Chart</h3>
-					<div class="card-tools">
-						<button type="button" class="btn btn-tool" data-card-widget="collapse">
-							<i class="fa fa-minus"></i>
-						</button>
-						<button type="button" class="btn btn-tool" data-card-widget="remove">
-							<i class="fa fa-times"></i>
-						</button>
-					</div>
 				</div>
 				<div class="card-body">
-					<canvas id="doughnutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+					<canvas id="doughnutChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
 				</div><!-- /.card-body -->
 			</div><!-- /.card -->
 			<!-- PIE CHART -->
 			<div class="card card-danger">
 				<div class="card-header">
 					<h3 class="card-title">Pie Chart</h3>
-					<div class="card-tools">
-						<button type="button" class="btn btn-tool" data-card-widget="collapse">
-							<i class="fa fa-minus"></i>
-						</button>
-						<button type="button" class="btn btn-tool" data-card-widget="remove">
-							<i class="fa fa-times"></i>
-						</button>
-					</div>
 				</div>
 				<div class="card-body">
-					<canvas id="pieChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+					<canvas id="pieChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
 				</div><!-- /.card-body -->
 			</div><!-- /.card -->
 		</div><!-- /.col (LEFT) -->
@@ -87,18 +63,10 @@
 			<div class="card card-info">
 				<div class="card-header">
 					<h3 class="card-title">Line Chart</h3>
-					<div class="card-tools">
-						<button type="button" class="btn btn-tool" data-card-widget="collapse">
-							<i class="fa fa-minus"></i>
-						</button>
-						<button type="button" class="btn btn-tool" data-card-widget="remove">
-							<i class="fa fa-times"></i>
-						</button>
-					</div>
 				</div>
 				<div class="card-body">
 					<div class="chart">
-						<canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+						<canvas id="lineChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
 					</div>
 				</div><!-- /.card-body -->
 			</div><!-- /.card -->
@@ -106,18 +74,10 @@
 			<div class="card card-success">
 				<div class="card-header">
 					<h3 class="card-title">Bar Chart</h3>
-					<div class="card-tools">
-						<button type="button" class="btn btn-tool" data-card-widget="collapse">
-							<i class="fa fa-minus"></i>
-						</button>
-						<button type="button" class="btn btn-tool" data-card-widget="remove">
-							<i class="fa fa-times"></i>
-						</button>
-					</div>
 				</div>
 				<div class="card-body">
 					<div class="chart">
-						<canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+						<canvas id="barChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
 					</div>
 				</div><!-- /.card-body -->
 			</div><!-- /.card -->
@@ -125,18 +85,10 @@
 			<div class="card card-success">
 				<div class="card-header">
 					<h3 class="card-title">Stacked Bar Chart</h3>
-					<div class="card-tools">
-						<button type="button" class="btn btn-tool" data-card-widget="collapse">
-							<i class="fa fa-minus"></i>
-						</button>
-						<button type="button" class="btn btn-tool" data-card-widget="remove">
-							<i class="fa fa-times"></i>
-						</button>
-					</div>
 				</div>
 				<div class="card-body">
 					<div class="chart">
-						<canvas id="stackedBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+						<canvas id="stackedBarChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
 					</div>
 				</div><!-- /.card-body -->
 			</div><!-- /.card -->
