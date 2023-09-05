@@ -99,11 +99,17 @@
 <hr class="pembatas">
 <section class="container-fluid">
 	<article class="row" id="chart-js3">
-		<div class="col-12 col-md-6">
-			<canvas id="dLineChart" width="500" height="500"></canvas>
+		<div class="card col-12 col-md-6">
+			<div class="card-body">
+				<h3 class="card-title bg-primary text-white">Line Chart</h3>
+				<canvas id="dLineChart" style="width: 98%;"></canvas>
+			</div>
 		</div>
-		<div class="col-12 col-md-6">
-			<canvas id="neuPieChart" width="500" height="500"></canvas>
+		<div class="card col-12 col-md-6">
+			<div class="card-body">
+				<h3 class="card-title bg-success text-white">Neu Pie Chart</h3>
+				<canvas id="neuPieChart" style="width: 98%;"></canvas>
+			</div>
 		</div>
 	</article>
 </section>

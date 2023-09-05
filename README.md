@@ -1,5 +1,5 @@
 Winston Repository
-Ini adalah Codeigniter 4.4.0 yang sudah ditambahkan dengan Myth Auth 1.2.1 serta Bootstrap 5.3.1
+Ini adalah Codeigniter 4.4.1 yang sudah ditambahkan dengan Myth Auth 1.2.1 serta Bootstrap 5.3.1
 
 File framework CSS tersimpan pada folder public
 
