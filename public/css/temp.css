@@ -250,13 +250,13 @@
 #topBtn:hover {
 	background-color: rgba(6, 97, 36, 0.7);
 }
+.dropdown:hover > .dropdown-menu {
+	display: block;
+	margin-top: 0;
+}
 @media screen and (min-width:576px) {
 	.dropdown .dropdown-menu {
 		display: none;
-	}
-	.dropdown:hover > .dropdown-menu {
-		display: block;
-		margin-top: 0;
 	}
 	.nav-item .dropdown:hover > .dropdown-menu {
 		position: absolute;
