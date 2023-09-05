@@ -84,6 +84,7 @@ phpunit
 #-------------------------
 # IDE / Development Files
 #-------------------------
+vendor/
 
 # Modules Testing
 _modules/*

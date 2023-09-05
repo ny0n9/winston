@@ -38,6 +38,4 @@
 
 <?= $this->section('pageScripts'); ?>
 <!-- Isi javascript tambahan disini -->
-<script>
-</script>
 <?= $this->endSection(); ?><!-- Section pageScripts -->
