@@ -43,7 +43,8 @@ class RoleFilter extends BaseFilter implements FilterInterface
             return redirect()->to($redirectURL)->with('error', lang('Auth.notEnoughPrivilege'));
         }
 
-        throw new PermissionException(lang('Auth.notEnoughPrivilege'));
+        //throw new PermissionException(lang('Auth.notEnoughPrivilege'));
+        throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
     }
 
     /**

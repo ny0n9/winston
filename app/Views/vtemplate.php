@@ -1,4 +1,4 @@
-<?= $this->extend('layout/bs4_minimal'); ?>
+<?= $this->extend('layout/bs5-minimal'); ?>
 
 <?= $this->section('metaTags'); ?>
 <!-- Isi metaTags tambahan disini -->
@@ -23,7 +23,7 @@
 <?= $this->endSection(); ?><!-- Section pageStyles -->
 
 <?= $this->section('pageMenu'); ?>
-<?= $this->include('layout/main_menu') ?>
+<?= $this->include('layout/bs5-main-menu') ?>
 <?= $this->endSection(); ?><!-- Section pageMenu -->
 
 <?= $this->section('pageContent'); ?>

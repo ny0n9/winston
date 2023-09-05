@@ -88,7 +88,7 @@ class Auth extends \Myth\Auth\Config\Auth
      *
      * @var string
      */
-    public $viewLayout = 'App\Views\layout\bs4_mythauth';
+    public $viewLayout = 'App\Views\layout\bs5-mythauth';
 
     /**
      * --------------------------------------------------------------------

@@ -1,0 +1,106 @@
+html {
+    font-size: 18px;
+    font-family: 'Montserrat', Fallback, sans-serif;
+}
+body {
+    background: #eafae8;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 100%;
+}
+h1 {
+    font-weight: 900;
+    font-style: normal;
+}
+h2 {
+    font-weight: 900;
+    font-style: italic;
+}
+h3 {
+    font-weight: 800;
+    font-style: normal;
+}
+h4 {
+    font-weight: 800;
+    font-style: italic;
+}
+h5 {
+    font-weight: 700;
+    font-style: normal;
+}
+h6 {
+    font-weight: 700;
+    font-style: italic;
+}
+a {
+    font-style: italic;
+}
+td > img.foto70px {
+    width: 70px;
+    max-width: 70px;
+}
+td > img.foto230px {
+    width: 230px;
+    max-width: 230px;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+    vertical-align: middle;
+}
+td.nowrap,
+th.nowrap {
+    white-space: nowrap;
+}
+.title {
+    display: block;
+    font-size: 2.5rem;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.notif {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.notifired {
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    background: #cc0000;
+}
+hr.pembatas {
+    border-top: 1px solid darkgreen;
+}
+@media (max-width: 575.98px) {
+    html {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .notif, .notifired {
+        font-size: 1.1rem;
+    }
+    h1, .h1 {
+        font-size: 2.0rem;
+    }
+    h2, .h2 {
+        font-size: 1.6rem;
+    }
+    h3, .h3 {
+        font-size: 1.4rem;
+    }
+    h4, .h4 {
+        font-size: 1.2rem;
+    }
+    h5, .h5 {
+        font-size: 1.0rem;
+    }
+    .container-fluid, .container, .container-sm {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

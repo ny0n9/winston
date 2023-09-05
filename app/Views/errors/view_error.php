@@ -1,18 +1,18 @@
-<?= $this->extend('layout/bs4_minimal') ;?>
+<?= $this->extend('layout/bs5-minimal'); ?>
 
-<?= $this->section('metaTags') ;?>
+<?= $this->section('metaTags'); ?>
 <meta name="robots" content="noindex">
-<?= $this->endSection() ;?>
+<?= $this->endSection(); ?>
 
-<?= $this->section('pageStyle') ;?>
+<?= $this->section('pageStyle'); ?>
 <!-- Tambahan stylesheet disini -->
-<?= $this->endSection() ;?>
+<?= $this->endSection(); ?>
 
-<?= $this->section('pageMenu') ;?>
-<?= $this->include('layout/main_menu') ?>
-<?= $this->endSection() ;?><!-- Section pageMenu -->
+<?= $this->section('pageMenu'); ?>
+<?= $this->include('layout/bs5-main-menu') ?>
+<?= $this->endSection(); ?><!-- Section pageMenu -->
 
-<?= $this->section('pageContent') ;?>
+<?= $this->section('pageContent'); ?>
 <section class="container-fluid">
 	<article class="row">
 		<div class="col-12 text-center">
@@ -21,8 +21,8 @@
 		</div>
 	</article>
 </section>
-<?= $this->endSection() ;?>
+<?= $this->endSection(); ?>
 
-<?= $this->section('pageScripts') ;?>
+<?= $this->section('pageScripts'); ?>
 <!-- Isi javascript tambahan disini -->
-<?= $this->endSection() ;?>
+<?= $this->endSection(); ?>

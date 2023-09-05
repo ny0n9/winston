@@ -41,10 +41,12 @@ class PermissionFilter extends BaseFilter implements FilterInterface
                 $redirectURL = session('redirect_url') ?? route_to($this->landingRoute);
                 unset($_SESSION['redirect_url']);
 
-                return redirect()->to($redirectURL)->with('error', lang('Auth.notEnoughPrivilege'));
+                //return redirect()->to($redirectURL)->with('error', lang('Auth.notEnoughPrivilege'));
+                throw new PermissionException(lang('Auth.notEnoughPrivilege'));
             }
 
-            throw new PermissionException(lang('Auth.notEnoughPrivilege'));
+            //throw new PermissionException(lang('Auth.notEnoughPrivilege'));
+            throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
         }
     }
 

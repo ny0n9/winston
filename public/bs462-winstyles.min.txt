@@ -1,7 +1,0 @@
-Gabungan dari :
-1. bootstrap.min.css
-2. bs462-navbar.min.css
-3. scroll_top.min.css
-4. bs462-style.min.css
-
-dengan menghapus : /*# sourceMappingURL=bootstrap.min.css.map */ di baris akhir dari bootstrap.min.css

@@ -24,4 +24,18 @@ class Beranda extends BaseController
 			print_r($_POST);
 		} else throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
 	}
+	public function chartjs2(): string
+	{
+		$data = [
+			'title' => 'Halaman ChartJS v2.9.4'
+		];
+		return view('beranda/chartjs2', $data);
+	}
+	public function chartjs3(): string
+	{
+		$data = [
+			'title' => 'Halaman ChartJS v3.9.1'
+		];
+		return view('beranda/chartjs3', $data);
+	}
 }

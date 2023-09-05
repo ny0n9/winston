@@ -42,6 +42,7 @@ $RECYCLE.BIN/
 # These should never be under version control,
 # as it poses a security risk.
 .env
+app/Config/Email.php
 .vagrant
 Vagrantfile
 
@@ -83,6 +84,7 @@ phpunit
 #-------------------------
 # IDE / Development Files
 #-------------------------
+vendor/
 
 # Modules Testing
 _modules/*

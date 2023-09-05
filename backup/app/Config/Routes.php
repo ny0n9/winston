@@ -15,6 +15,8 @@ $routes->set404Override(function () {
  */
 $routes->get('/', 'Beranda::index');
 $routes->get('beranda/about', 'Beranda::about');
+$routes->get('beranda/chartjs2', 'Beranda::chartjs2');
+$routes->get('beranda/chartjs3', 'Beranda::chartjs3');
 
 $routes->post('beranda/test_ajax', 'Beranda::test_ajax');
 
