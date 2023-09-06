@@ -32,10 +32,12 @@
 			<div class="col-12"><b>CodeIgniter Version : <?= CodeIgniter\CodeIgniter::CI_VERSION ?></b></div>
 		</div>
 		<div class="row text-center">
-			<div class="col-sm"><?= 'HTTP_HOST = ' . $_SERVER['HTTP_HOST'] ?></div>
-			<div class="col-sm"><?= ' --- REQUEST_URI = ' . $_SERVER['REQUEST_URI'] ?></div>
-			<div class="col-sm"><?= ' --- base_url = ' . base_url() ?></div>
-			<div class="col-sm"><?= ' --- site_url = ' . site_url() ?></div>
+			<div class="col-sm"><?= "_SERVER['HTTP_HOST'] = " . $_SERVER['HTTP_HOST'] ?></div>
+			<div class="col-sm"><?= "_SERVER['REQUEST_URI'] = " . $_SERVER['REQUEST_URI'] ?></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-sm"><?= 'base_url = ' . base_url() ?></div>
+			<div class="col-sm"><?= 'site_url = ' . site_url() ?></div>
 		</div>
 	</footer>
 
