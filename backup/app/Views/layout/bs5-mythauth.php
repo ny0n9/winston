@@ -23,7 +23,7 @@
 		<?= $this->renderSection('main') ?>
 	</main>
 
-	<footer class="container-fluid my-3">
+	<footer class="container-fluid my-3 bg-greenwin">
 		<div class="row text-center">
 			<div class="col-sm">Page rendered in {elapsed_time} seconds</div>
 			<div class="col-sm">@2021 by <a href="https://winston.lan/" target="_blank">Winston Sahusilawane</a></div>
@@ -34,10 +34,10 @@
 			<div class="col-12"><b>CodeIgniter Version : <?= CodeIgniter\CodeIgniter::CI_VERSION ?></b></div>
 		</div>
 		<div class="row text-center">
-			<?= 'HTTP_HOST = ' . $_SERVER['HTTP_HOST'] ?>
-			<?= ' --- REQUEST_URI = ' . $_SERVER['REQUEST_URI'] ?>
-			<?= ' --- base_url = ' . base_url() ?>
-			<?= ' --- site_url = ' . site_url() ?>
+			<div class="col-sm"><?= 'HTTP_HOST = ' . $_SERVER['HTTP_HOST'] ?></div>
+			<div class="col-sm"><?= ' --- REQUEST_URI = ' . $_SERVER['REQUEST_URI'] ?></div>
+			<div class="col-sm"><?= ' --- base_url = ' . base_url() ?></div>
+			<div class="col-sm"><?= ' --- site_url = ' . site_url() ?></div>
 		</div>
 	</footer>
 

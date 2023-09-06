@@ -119,9 +119,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 				<li class="nav-item">
 					<?php if (logged_in()) : ?>
 						<a href="<?= site_url('logout'); ?>" class="text-decoration-none">
-							<span class="nav-link text-white">
-								<?= user()->username; ?>&nbsp;&nbsp;<i class="fa fa-sign-out"></i> Logout
-							</span>
+							<span class="nav-link text-white"><i class="fa fa-sign-out"></i> Logout</span>
 						</a>
 					<?php else : ?>
 						<a href="<?= site_url('login'); ?>" class="text-decoration-none">
@@ -132,3 +130,10 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 		</div>
 	</div>
 </nav>
+<?php if (logged_in()) : ?>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 bg-info text-white text-end">Anda Masuk Sebagai : <?= user()->username; ?></div>
+		</div>
+	</div>
+<?php endif; ?>

@@ -3,7 +3,8 @@ html {
     font-family: 'Montserrat', Fallback, sans-serif;
 }
 body {
-    background: #eafae8;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
     font-weight: 500;
     font-style: normal;
     font-size: 100%;
