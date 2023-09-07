@@ -10,7 +10,6 @@
 <?= $this->section('pageStyles'); ?>
 <!-- Isi CSS tambahan disini -->
 <link href="<?= base_url('public/css/chart-2.9.4.css'); ?>" rel="stylesheet">
-<link href="<?= base_url('public/css/alt/adminlte-wins-comp.min.css'); ?>" rel="stylesheet">
 <?= $this->endSection(); ?><!-- Section pageStyles -->
 
 <?= $this->section('pageMenu'); ?>
@@ -89,7 +88,7 @@
 		<!-- /.card -->
 		<!-- STACKED BAR CHART -->
 		<div class="card col-12 col-md-6">
-			<div class="card-header text-ng-success">
+			<div class="card-header text-bg-success">
 				<h3 class="card-title text-center">Stacked Bar Chart</h3>
 			</div>
 			<div class="card-body">
@@ -106,9 +105,8 @@
 <?= $this->section('pageScripts'); ?>
 <!-- Isi javascript tambahan disini -->
 <script src="<?= base_url('public/js/chart-2.9.4.bundle.min.js'); ?>"></script>
-<script src="<?= base_url('public/js/adminlte.min.js'); ?>"></script>
 
-<script>
+<script type="text/javascript" {csp-script-nonce}>
 	$(function() {
 		/* ChartJS
 		 * -------

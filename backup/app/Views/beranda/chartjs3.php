@@ -9,7 +9,6 @@
 
 <?= $this->section('pageStyles'); ?>
 <!-- Isi CSS tambahan disini -->
-<link href="<?= base_url('public/css/alt/adminlte-wins-comp.min.css'); ?>" rel="stylesheet">
 <?= $this->endSection(); ?><!-- Section pageStyles -->
 
 <?= $this->section('pageMenu'); ?>
@@ -120,9 +119,8 @@
 <?= $this->section('pageScripts'); ?>
 <!-- Isi javascript tambahan disini -->
 <script src="<?= base_url(); ?>/public/js/chart-wins.min.js"></script>
-<script src="<?= base_url('public/js/adminlte.min.js'); ?>"></script>
 
-<script>
+<script type="text/javascript" {csp-script-nonce}>
 	// AREA CHART
 	const areaChartLabels = [
 		'January', 'February', 'March', 'April', 'May', 'June', 'July'

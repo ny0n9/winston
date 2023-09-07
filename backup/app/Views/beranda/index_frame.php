@@ -24,7 +24,7 @@
 			<img src="<?= site_url('public/img/wins-garuda-250x250.jpg') ?>" class="rounded mx-auto d-block" alt="Winston">
 			<h2 class="text-center">Situs ini dibangun dengan memanfaatkan</h2>
 			<h3 class="text-center">Framework PHP : CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h3>
-			<h3 class="text-center">Framework CSS : Bootstram 5.3.1</h3>
+			<h3 class="text-center">Framework CSS : Bootstrap 5.3.1</h3>
 			<p class="text-center">Situs ini akan menampilkan catatan singkat terkait Codeigniter 4, Datatables Server Side juga tips dan trik tentang website</p>
 			<p class="text-center">Isi folder dari situs ini dapat dilihat di : https://github.com/ny0n9/winston atau dapat di download dengan perintah :</p>
 			<p>

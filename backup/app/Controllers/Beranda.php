@@ -21,7 +21,7 @@ class Beranda extends BaseController
 		if ($this->request->isAJAX()) {
 			if (!$this->request->is('post'))
 				throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s405');
-			print_r($_POST);
+			dd($_POST);
 		} else throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
 	}
 	public function chartjs2(): string
