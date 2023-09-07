@@ -42,7 +42,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown-submenu">
 							<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 								Dropdown
 							</button>
@@ -62,7 +62,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown-submenu">
 							<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 								Dropdown
 							</button>
@@ -82,7 +82,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown-submenu">
 							<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 								Dropdown
 							</button>
@@ -102,7 +102,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 						<li><a class="dropdown-item" href="<?= site_url('beranda/chartjs2') ?>">ChartJS v2.9.4</a></li>
 						<li><a class="dropdown-item" href="<?= site_url('beranda/chartjs3') ?>">ChartJS v3.9.1</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown-submenu">
 							<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 								Dropdown
 							</button>
