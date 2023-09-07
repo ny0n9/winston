@@ -254,6 +254,11 @@
 	display: block;
 	margin-top: 0;
 }
+.dropdown-submenu:hover > .dropdown-menu{
+    display: block !important;
+    left: 100%;
+    margin-top: -2.5em;
+}
 @media screen and (min-width:576px) {
 	.dropdown .dropdown-menu {
 		display: none;

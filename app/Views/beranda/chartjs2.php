@@ -28,92 +28,76 @@
 </section>
 <section class="container-fluid">
 	<div class="row">
-		<div class="col-md-6">
-			<!-- AREA CHART -->
-			<div class="card card-primary">
-				<div class="card-header">
-					<h3 class="card-title">Area Chart</h3>
-				</div>
-				<div class="card-body">
-					<div class="chart">
-						<canvas id="areaChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
-					</div>
-				</div>
-				<!-- /.card-body -->
+		<!-- AREA CHART -->
+		<div class="card col-12 col-md-6">
+			<div class="card-header text-bg-primary">
+				<h3 class="card-title text-center">Area Chart</h3>
 			</div>
-			<!-- /.card -->
-
-			<!-- DONUT CHART -->
-			<div class="card card-danger">
-				<div class="card-header">
-					<h3 class="card-title">Donut Chart</h3>
-				</div>
-				<div class="card-body">
-					<canvas id="donutChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
-				</div>
-				<!-- /.card-body -->
+			<div class="card-body">
+				<canvas id="areaChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
 			</div>
-			<!-- /.card -->
-
-			<!-- PIE CHART -->
-			<div class="card card-danger">
-				<div class="card-header">
-					<h3 class="card-title">Pie Chart</h3>
-				</div>
-				<div class="card-body">
-					<canvas id="pieChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
-				</div>
-				<!-- /.card-body -->
-			</div>
-			<!-- /.card -->
-
+			<!-- /.card-body -->
 		</div>
-		<!-- /.col (LEFT) -->
-		<div class="col-md-6">
-			<!-- LINE CHART -->
-			<div class="card card-info">
-				<div class="card-header">
-					<h3 class="card-title">Line Chart</h3>
-				</div>
-				<div class="card-body">
-					<div class="chart">
-						<canvas id="lineChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
-					</div>
-				</div>
-				<!-- /.card-body -->
+		<!-- /.card -->
+		<!-- DONUT CHART -->
+		<div class="card col-12 col-md-6">
+			<div class="card-header text-bg-danger">
+				<h3 class="card-title text-center">Donut Chart</h3>
 			</div>
-			<!-- /.card -->
-
-			<!-- BAR CHART -->
-			<div class="card card-success">
-				<div class="card-header">
-					<h3 class="card-title">Bar Chart</h3>
-				</div>
-				<div class="card-body">
-					<div class="chart">
-						<canvas id="barChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
-					</div>
-				</div>
-				<!-- /.card-body -->
+			<div class="card-body">
+				<canvas id="donutChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
 			</div>
-			<!-- /.card -->
-
-			<!-- STACKED BAR CHART -->
-			<div class="card card-success">
-				<div class="card-header">
-					<h3 class="card-title">Stacked Bar Chart</h3>
-				</div>
-				<div class="card-body">
-					<div class="chart">
-						<canvas id="stackedBarChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
-					</div>
-				</div>
-				<!-- /.card-body -->
-			</div>
-			<!-- /.card -->
-
+			<!-- /.card-body -->
 		</div>
-		<!-- /.col (RIGHT) -->
+		<!-- /.card -->
+	</div>
+	<div class="row">
+		<!-- PIE CHART -->
+		<div class="card col-12 col-md-6">
+			<div class="card-header text-bg-secondary">
+				<h3 class="card-title text-center">Pie Chart</h3>
+			</div>
+			<div class="card-body">
+				<canvas id="pieChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.card -->
+		<!-- LINE CHART -->
+		<div class="card col-12 col-md-6">
+			<div class="card-header text-bg-success">
+				<h3 class="card-title text-center">Line Chart</h3>
+			</div>
+			<div class="card-body">
+				<canvas id="lineChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.card -->
+	</div>
+	<div class="row">
+		<!-- BAR CHART -->
+		<div class="card col-12 col-md-6">
+			<div class="card-header text-bg-primary">
+				<h3 class="card-title text-center">Bar Chart</h3>
+			</div>
+			<div class="card-body">
+				<canvas id="barChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.card -->
+		<!-- STACKED BAR CHART -->
+		<div class="card col-12 col-md-6">
+			<div class="card-header text-ng-success">
+				<h3 class="card-title text-center">Stacked Bar Chart</h3>
+			</div>
+			<div class="card-body">
+				<canvas id="stackedBarChart" style="min-height: 350px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.card -->
 	</div>
 	<!-- /.row -->
 </section><!-- /.container-fluid-->

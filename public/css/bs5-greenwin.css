@@ -3,15 +3,21 @@
     display: block;
     margin-top: 0;
 }
+.nav-item .dropdown:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 0.125em;
+}
+.dropdown-submenu:hover > .dropdown-menu{
+    display: block !important;
+    left: 100%;
+    margin-top: -2.5em;
+}
+
 @media screen and (min-width:576px) {
 	.dropdown .dropdown-menu {
 		display: none;
-	}
-	.nav-item .dropdown:hover > .dropdown-menu {
-		position: absolute;
-		top: 0;
-		left: 100%;
-		margin-left: 0.125em;
 	}
 }
 .btn-greenwin {
