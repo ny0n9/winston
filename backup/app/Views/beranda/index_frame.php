@@ -8,8 +8,6 @@
 
 <?= $this->section('pageStyles'); ?>
 <!-- Isi CSS tambahan disini -->
-<style>
-</style>
 <?= $this->endSection(); ?><!-- Section pageStyles -->
 
 <?= $this->section('pageMenu'); ?>
