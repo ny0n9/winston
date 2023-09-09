@@ -11,6 +11,6 @@ bs5-jsminimal.php -> untuk membangun view standard menggunakan jquery<br>
 bs5-mythauth.php -> untuk layout login, register dan forgot dari Myth Auth<br>
 bs5-winslider -> untuk view yang menyertakan winslider
 
-Setelah download repository ini, perlu dijalankan :<br>
+Setelah download repository ini, perlu dijalankan pada folder dimana file README.md ada :<br>
 &emsp; composer require codeigniter4/framework <br>
 agar folder vendor nya didownload oleh composer
