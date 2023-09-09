@@ -24,9 +24,9 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 					<a class="nav-link" href="<?= site_url('beranda/about') ?>">Icons</a>
 				</li>
 				<li class="nav-item dropdown">
-					<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Master Table
-					</button>
+					</a>
 					<ul class="dropdown-menu dropdown-menu-greenwin">
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
@@ -35,17 +35,17 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 				</li>
 
 				<li class="nav-item dropdown">
-					<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Akademik
-					</button>
+					</a>
 					<ul class="dropdown-menu dropdown-menu-greenwin">
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
 						<li class="nav-item dropdown-submenu">
-							<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-								Dropdown
-							</button>
+							<a class="dropdown-item" href="#">
+								Dropdown <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
+							</a>
 							<ul class="dropdown-menu dropdown-menu-greenwin">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
@@ -54,18 +54,19 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 						</li>
 					</ul>
 				</li>
+
 				<li class="nav-item dropdown">
-					<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Informasi
-					</button>
+					</a>
 					<ul class="dropdown-menu dropdown-menu-greenwin">
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
 						<li class="nav-item dropdown-submenu">
-							<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-								Dropdown
-							</button>
+							<a class="dropdown-item" href="#">
+								Dropdown <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
+							</a>
 							<ul class="dropdown-menu dropdown-menu-greenwin">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
@@ -74,18 +75,19 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 						</li>
 					</ul>
 				</li>
+
 				<li class="nav-item dropdown">
-					<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Pengaturan
-					</button>
+					</a>
 					<ul class="dropdown-menu dropdown-menu-greenwin">
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
 						<li class="nav-item dropdown-submenu">
-							<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-								Dropdown
-							</button>
+							<a class="dropdown-item" href="#">
+								Dropdown <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
+							</a>
 							<ul class="dropdown-menu dropdown-menu-greenwin">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
@@ -95,17 +97,17 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
-					<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Dashboard
-					</button>
+					</a>
 					<ul class="dropdown-menu dropdown-menu-greenwin">
 						<li><a class="dropdown-item" href="<?= site_url('beranda/chartjs2') ?>">ChartJS v2.9.4</a></li>
 						<li><a class="dropdown-item" href="<?= site_url('beranda/chartjs3') ?>">ChartJS v3.9.1</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
 						<li class="nav-item dropdown-submenu">
-							<button class="btn btn-greenwin dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-								Dropdown
-							</button>
+							<a class="dropdown-item" href="#">
+								Dropdown <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
+							</a>
 							<ul class="dropdown-menu dropdown-menu-greenwin">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
