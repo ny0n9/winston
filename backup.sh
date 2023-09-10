@@ -13,7 +13,6 @@ cp -av app/Config/App.php backup/app/Config/
 cp -av app/Config/Auth.php backup/app/Config/
 cp -av app/Config/Routes.php backup/app/Config/
 cp -av app/Config/Routing.php backup/app/Config/
-cp -av app/Config/Email.php backup/app/Config/
 cp -av app/Config/Validation.php backup/app/Config/
 cp -av app/Config/Filters.php backup/app/Config/
 cp -av app/Config/Events.php backup/app/Config/

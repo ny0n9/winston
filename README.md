@@ -14,3 +14,21 @@ bs5-winslider -> untuk view yang menyertakan winslider
 Setelah download repository ini, perlu dijalankan pada folder dimana file README.md ada :<br>
 &emsp; composer require codeigniter4/framework <br>
 agar folder vendor nya didownload oleh composer
+
+Cara menggunakan SQLite3 di Codeigniter 4
+
+1. pastikan pada file php.ini, kedua extension dibawah ini diaktivkan :<br>
+   &emsp; extension=pdo_sqlite <br>
+   &emsp; extension=sqlite3
+
+2. pada file .env konfigurasi database sebagai berikut :<br>
+   &emsp; database.default.database = ci4sqlite.db <br>
+   &emsp; database.default.DBDriver = SQLite3
+
+3. pada folder instalasi jalankan perintah :<br>
+   &emsp; php spark db:create ci4sqlite<br>
+   maka secara otomatis akan dibuatka pada folder writable akan dibuatkan file :<br>
+   &emsp; ci4sqlite.db // writable/ci4sqlite.db
+
+4. untuk mengujinya jalankan perintah :<br>
+   &emsp; php spark migrate --all
