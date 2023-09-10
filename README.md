@@ -27,7 +27,7 @@ Cara menggunakan SQLite3 di Codeigniter 4
 
 3. pada folder instalasi jalankan perintah :<br>
    &emsp; php spark db:create ci4sqlite<br>
-   maka secara otomatis akan dibuatka pada folder writable akan dibuatkan file :<br>
+   maka secara otomatis pada folder writable akan dibuatkan file :<br>
    &emsp; ci4sqlite.db // writable/ci4sqlite.db
 
 4. untuk mengujinya jalankan perintah :<br>

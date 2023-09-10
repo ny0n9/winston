@@ -17,6 +17,7 @@ cp -av app/Config/Validation.php backup/app/Config/
 cp -av app/Config/Filters.php backup/app/Config/
 cp -av app/Config/Events.php backup/app/Config/
 cp -av app/Config/Autoload.php backup/app/Config/
+cp -av app/Config/Email.php backup/app/Config/
 cp -av app/Language/en backup/app/Language/
 cp -av app/Language/id backup/app/Language/
 cp -av app/Models/*.php backup/app/Models/
