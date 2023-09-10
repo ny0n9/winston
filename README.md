@@ -13,7 +13,8 @@ bs5-winslider -> untuk view yang menyertakan winslider
 
 Setelah download repository ini, perlu dijalankan pada folder dimana file README.md ada :<br>
 &emsp; composer require codeigniter4/framework <br>
-agar folder vendor nya didownload oleh composer
+agar folder vendor nya didownload oleh composer, kemudian copy file Email.php yang tidak disertakan pada repository ini dengan perintah : <br>
+&emsp; cp -av vendor/codeigniter4/framework/app/Config/Email.php app/Config/
 
 Cara menggunakan SQLite3 di Codeigniter 4
 
