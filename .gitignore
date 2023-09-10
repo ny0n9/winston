@@ -42,10 +42,14 @@ $RECYCLE.BIN/
 # These should never be under version control,
 # as it poses a security risk.
 .env
-app/Config/Email.php
-backup/app/Config/Email.php
 .vagrant
 Vagrantfile
+
+# Email Config
+app/Config/Email.php
+
+# backup Email Config
+backup/app/Config/Email.php
 
 #-------------------------
 # Temporary Files

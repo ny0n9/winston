@@ -19,7 +19,8 @@ Cara menggunakan SQLite3 di Codeigniter 4
 
 1. pastikan pada file php.ini, kedua extension dibawah ini diaktivkan :<br>
    &emsp; extension=pdo_sqlite <br>
-   &emsp; extension=sqlite3
+   &emsp; extension=sqlite3 <br>
+   jika konfigurasi diatas baru di buat, maka harus di restart server aoache nya
 
 2. pada file .env konfigurasi database sebagai berikut :<br>
    &emsp; database.default.database = ci4sqlite.db <br>
