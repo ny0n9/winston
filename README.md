@@ -45,7 +45,7 @@ Cara pakai di Controller :<br>
 &emsp; $params['allowedFields'] = ['field_01', 'field_02', 'dst'];<br>
 &emsp; $ssp = new SspModel($params);
 
-Demo menggunakan database sqlite3 dapat dilihat pada menu Pengaturan->Pengguna->Kelola Pengguna<br>
+Demo Datatables Server Side menggunakan database sqlite3 dapat dilihat pada menu Pengaturan->Pengguna->Kelola Pengguna<br>
 Demo users :<br>
 &emsp; master@winston.lan master P455w0rd5<br>
 &emsp; admin@winston.lan admin P455w0rd5<br>
