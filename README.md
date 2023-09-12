@@ -41,8 +41,8 @@ namun SspModel ini dapat juga digunakan secara global untuk semua table<br>
 
 Cara pakai di Controller :<br>
 &emsp; $paramas['table'] = 'table_name';<br>
-&emsp; $params['primaryKey'] = 'primary_key';
-&emsp; $params['allowedFields'] = ['field_01', 'field_02', 'dst'];
+&emsp; $params['primaryKey'] = 'primary_key';<br>
+&emsp; $params['allowedFields'] = ['field_01', 'field_02', 'dst'];<br>
 &emsp; $ssp = new SspModel($params);
 
 Demo menggunakan database sqlite3 dapat dilihat pada menu Pengaturan->Pengguna->Kelola Pengguna<br>
