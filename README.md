@@ -35,7 +35,7 @@ Cara menggunakan SQLite3 di Codeigniter 4
 4. untuk mengujinya jalankan perintah :<br>
    &emsp; php spark migrate --all
 
-Datatables Server Side:<br>
+Codeigniter 4 and Datatables Server Side:<br>
 Untuk model datatables server side menggunakan file model app/Models/SspModel.php<br>
 namun SspModel ini dapat juga digunakan secara global untuk semua table<br>
 
