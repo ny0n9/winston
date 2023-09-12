@@ -415,3 +415,7 @@ a.bg-redwin:hover, a.bg-redwin:focus,
 button.bg-redwin:hover, button.bg-redwin:focus {
 	background-color: #9c1a06 !important;
 }
+td.nowrap,
+th.nowrap {
+    white-space: nowrap;
+}

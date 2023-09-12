@@ -1,0 +1,3 @@
+master@winston.lan master P455w0rd5
+admin@winston.lan admin P455w0rd5
+umum@winston.lan umum P455w0rd5

@@ -20,4 +20,11 @@ $routes->get('beranda/chartjs3', 'Beranda::chartjs3');
 
 $routes->post('beranda/test_ajax', 'Beranda::test_ajax');
 
+$routes->get('pengguna', 'Pengguna::index');
+
+$routes->post('pengguna/list_users', 'Pengguna::list_users');
+$routes->post('pengguna/form_add_user', 'Pengguna::form_add_user');
+$routes->post('pengguna/simpan_users', 'Pengguna::simpan_users');
+
+
 $routes->get('error/(:any)', 'Error::show/$1');

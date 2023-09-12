@@ -86,10 +86,10 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
 						<li class="nav-item dropdown-submenu">
 							<a class="dropdown-item" href="#">
-								Dropdown <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
+								Pengguna <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
 							</a>
 							<ul class="dropdown-menu dropdown-menu-greenwin">
-								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="<?= site_url('pengguna'); ?>">Kelola Pengguna</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
 								<li><a class="dropdown-item" href="#">Something else here</a></li>
 							</ul>
