@@ -5,7 +5,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 <header class="container-fluid bg-redwin">
 	<div class="row">
 		<div class="col-12 text-center">
-			<h1 class="pt-2 text-white">Brand Header</h1>
+			<h1 class="pt-2 text-white">Winston Sahusilawane</h1>
 		</div>
 	</div>
 </header>
