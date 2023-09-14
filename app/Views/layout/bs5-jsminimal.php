@@ -7,6 +7,9 @@
 	<meta name="generator" content="Hugo 0.115.4">
 	<?= $this->renderSection('metaTags') ?>
 	<title><?= empty($title) ? uri_title() : $title; ?></title>
+	<link rel="icon" href="<?= base_url('public/favicon.ico'); ?>">
+	<link rel="icon" type="image/x-icon" href="<?= base_url('public/favicon.ico'); ?>">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?= base_url('public/favicon.ico'); ?>">
 	<link href="<?= base_url('public/css/bs531-styles.min.css'); ?>" rel="stylesheet">
 	<link href="<?= base_url('public/css/font-awesome.min.css'); ?>" rel="stylesheet">
 	<?= $this->renderSection('pageStyles') ?>

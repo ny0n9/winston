@@ -27,6 +27,7 @@ cp -av app/Views/*.php backup/app/Views/
 cp -av app/Views/Auth backup/app/Views/
 cp -av app/Views/beranda backup/app/Views/
 cp -av app/Views/layout backup/app/Views/
+cp -av app/Views/pengguna backup/app/Views/
 
 cp -av add*.php test*.php backup.sh ci4-update.sh dot.htaccess backup/
 rm -fv backup/app/Controllers/Home.php

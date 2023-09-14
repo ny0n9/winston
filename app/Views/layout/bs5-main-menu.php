@@ -60,8 +60,8 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 						Informasi
 					</a>
 					<ul class="dropdown-menu dropdown-menu-greenwin">
-						<li><a class="dropdown-item" href="#">Action</a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="https://getbootstrap.com/">Bootstrap</a></li>
+						<li><a class="dropdown-item" href="https://codeigniter.com/">Codeigniter</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
 						<li class="nav-item dropdown-submenu">
 							<a class="dropdown-item" href="#">

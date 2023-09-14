@@ -139,4 +139,29 @@ class Pengguna extends BaseController
             throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
         }
     }
+    public function info_user()
+    {
+        if ($this->request->isAJAX()) {
+            if (!$this->request->is('post'))
+                throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s405');
+            $where = ['id' => $this->request->getPost('id')];
+            $params['table'] = 'users';
+            $params['primaryKey'] = 'id';
+            $ssp = new SspModel($params);
+            $row = $ssp->ambil_data($where);
+            $data = [
+                'id' => $row['id'],
+                'email' => $row['email'],
+                'username' => $row['username'],
+                'password_hash' => $row['password_hash'],
+                'active' => $row['active'],
+                'created_at' => $row['created_at'],
+                'updated_at' => $row['updated_at']
+            ];
+            $output = [
+                'user' => view('pengguna/modal_info_user', $data)
+            ];
+            echo json_encode($output);
+        } else throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
+    }
 }

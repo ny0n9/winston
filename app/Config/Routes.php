@@ -25,6 +25,7 @@ $routes->get('pengguna', 'Pengguna::index');
 $routes->post('pengguna/list_users', 'Pengguna::list_users');
 $routes->post('pengguna/form_add_user', 'Pengguna::form_add_user');
 $routes->post('pengguna/simpan_users', 'Pengguna::simpan_users');
+$routes->post('pengguna/info_user', 'Pengguna::info_user');
 
 
 $routes->get('error/(:any)', 'Error::show/$1');
