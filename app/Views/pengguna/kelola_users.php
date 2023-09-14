@@ -17,6 +17,11 @@
 	table {
 		min-width: 100%;
 	}
+
+	table.dataTable thead>tr {
+		color: #fff;
+		background-color: black !important;
+	}
 </style>
 <?= $this->endSection(); ?><!-- Section pageStyles -->
 
@@ -50,7 +55,7 @@
 			</div>
 			<div class="table-responsive ml-1 mr-1">
 				<table class="table table-striped table-bordered align-middle" id="data_users">
-					<thead class="thead-dark">
+					<thead class="table-dark">
 						<tr>
 							<th id='0'>No</th>
 							<th id='1'>ID</th>

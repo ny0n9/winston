@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\SspModel;
 use Config\Services;
-
 use App\Controllers\BaseController;
 
 class Pengguna extends BaseController
