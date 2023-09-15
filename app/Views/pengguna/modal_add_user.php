@@ -1,9 +1,9 @@
 <?php helper('form'); ?>
-<div class="modal fade" id="modal_add_user" tabindex="-1" role="dialog" aria-labelledby="modal_add_user" aria-hidden="true">
+<div class="modal fade" id="modal_add_user" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal_add_userLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title" id="modal_add_user">Form Add Pengguna</h4>
+				<h4 class="modal-title" id="modal_add_userLabel">Form Add Pengguna</h4>
 				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>

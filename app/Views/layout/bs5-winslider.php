@@ -11,10 +11,10 @@
 	<link rel="icon" href="<?= base_url('public/favicon.ico'); ?>">
 	<link rel="icon" type="image/x-icon" href="<?= base_url('public/favicon.ico'); ?>">
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?= base_url('public/favicon.ico'); ?>">
-	<link href="<?= base_url('public/css/bs531-styles.min.css'); ?>" rel="stylesheet">
+	<link href="<?= base_url('public/css/bs532-styles.min.css'); ?>" rel="stylesheet">
 	<link href="<?= base_url('public/css/font-awesome.min.css'); ?>" rel="stylesheet">
-	<?= $this->renderSection('pageStyles') ?>
 	<link href="<?= base_url('public/style.css'); ?>" rel="stylesheet">
+	<?= $this->renderSection('pageStyles') ?>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
 	</footer>
 
 	<script src="<?= base_url('public/winslider/jquery.min.js'); ?>"></script>
-	<script src="<?= base_url('public/js/bs531-scripts.min.js'); ?>"></script>
+	<script src="<?= base_url('public/js/bs532-scripts.min.js'); ?>"></script>
 	<?= $this->renderSection('pageScripts') ?>
 </body>
 
