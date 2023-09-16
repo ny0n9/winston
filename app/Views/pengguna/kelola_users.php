@@ -15,7 +15,7 @@
 <link href="<?= base_url(); ?>/public/css/sweetalert2.min.css" rel="stylesheet">
 <!-- Agar thead dan tbody inlined pada datatables server side maka table min-width = 100% -->
 <style>
-	table {
+	table.dataTable {
 		min-width: 100%;
 	}
 
@@ -40,9 +40,9 @@
 	</article>
 </section>
 
-<section class="container-fluid">
+<section class="container">
 	<article class="row">
-		<div class="col-sm-8 offset-sm-2">
+		<div class="col-sm-12">
 			<div class="card">
 				<div class="card-header">
 					<div class="card-title">Tambah Data Pengguna</div>
