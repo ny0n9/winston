@@ -3,6 +3,8 @@
 rm -rf backup/
 mkdir -p backup/app/Config
 mkdir -p backup/app/Controllers
+mkdir -p backup/app/Database/Migrations
+mkdir -p backup/app/Database/Seeds
 mkdir -p backup/app/Filters
 mkdir -p backup/app/Language
 mkdir -p backup/app/Models
@@ -11,6 +13,8 @@ cp -av app/Filters/*.php backup/app/Filters/
 cp -av app/*.php backup/app/
 cp -av app/Config/App.php backup/app/Config/
 cp -av app/Config/Auth.php backup/app/Config/
+cp -av app/Database/Migrations/*.php backup/app/Database/Migrations/
+cp -av app/Database/Seeds/*.php backup/app/Database/Seeds/
 cp -av app/Config/Routes.php backup/app/Config/
 cp -av app/Config/Routing.php backup/app/Config/
 cp -av app/Config/Validation.php backup/app/Config/

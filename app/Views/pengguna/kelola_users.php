@@ -11,6 +11,7 @@
 <!-- Isi CSS tambahan disini -->
 <link href="<?= base_url(); ?>/public/css/jquery.dataTables.min.css" rel="stylesheet">
 <link href="<?= base_url(); ?>/public/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<link href="<?= base_url(); ?>/public/css/fixedHeader.bootstrap5.min.css" rel="stylesheet">
 <link href="<?= base_url(); ?>/public/css/sweetalert2.min.css" rel="stylesheet">
 <!-- Agar thead dan tbody inlined pada datatables server side maka table min-width = 100% -->
 <style>
@@ -83,6 +84,7 @@
 <!-- Isi javascript tambahan disini -->
 <script src="<?= base_url(); ?>/public/js/jquery.dataTables.min.js"></script>
 <script src="<?= base_url(); ?>/public/js/dataTables.bootstrap5.min.js"></script>
+<script src="<?= base_url(); ?>/public/js/dataTables.fixedHeader.min.js"></script>
 <!-- Untuk menggunakan fitur render : DataTable.render.datetime -->
 <script src="<?= base_url(); ?>/public/js/moment.min.js"></script>
 <script src="<?= base_url(); ?>/public/js/sweetalert2.all.min.js"></script>
@@ -102,6 +104,10 @@
 				data: function(d) {
 					d.<?= csrf_token(); ?> = "<?= csrf_hash(); ?>";
 				}
+			},
+			fixedHeader: true,
+			fixedHeader: {
+				headerOffset: $('.sticky-top').outerHeight()
 			},
 			oLanguage: {
 				sLengthMenu: "<b>Tampilkan _MENU_ data per halaman</b>",

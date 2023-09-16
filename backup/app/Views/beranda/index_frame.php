@@ -86,6 +86,10 @@
 			&emsp; master@winston.lan master P455w0rd5<br>
 			&emsp; admin@winston.lan admin P455w0rd5<br>
 			&emsp; umum@winston.lan umum P455w0rd5<br>
+
+			Datatables Server Side pada repository ini juga sudah menerapak fixed header pada bootstrap navbar sticky-top
+			untuk menampilkannya tambahkan 25 data pada users table dengan menjalan perintah dibawah ini pada folder instalasi :<br>
+			&emsp; php spark db:seed SeedUsers
 		</div>
 	</article>
 </section>
