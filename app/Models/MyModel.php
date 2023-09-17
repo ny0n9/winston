@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-use CodeIgniter\HTTP\RequestInterface;
+use Config\Services;
 
 class MyModel extends Model
 {
@@ -45,7 +45,6 @@ class MyModel extends Model
 	protected $column_search = [];
 	protected $builder;
 	protected $where;
-	protected $request;
 
 
 	/*
@@ -54,9 +53,8 @@ class MyModel extends Model
 	CREATE VIEW vie_siswa AS SELECT .*, kelas.nama_kelas FROM siswa INNER JOIN kelas ON siswa.id_kelas = kelas.id;
 	jadi $table = 'vie_siswa'
 	 */
-	function __construct(RequestInterface $request, $params = [])
+	function __construct($params = [])
 	{
-		$this->request = $request;
 		if ($params) {
 			if (isset($params['table'])) $this->table = $params['table'];
 			if (isset($params['where'])) $this->where = $params['where'];
@@ -75,30 +73,32 @@ class MyModel extends Model
 	*/
 	private function _set_sql_builder()
 	{
+		$request = Services::request();
 		if (isset($this->where)) $this->builder->where($this->where);
 		$i = 0;
 		foreach ($this->column_search as $item) {
-			if ($this->request->getPost('search')['value']) {
+			if ($request->getPost('search')['value']) {
 				if ($i === 0) {
 					$this->builder->groupStart();
-					$this->builder->like($item, $this->request->getPost('search')['value']);
+					$this->builder->like($item, $request->getPost('search')['value']);
 				} else {
-					$this->builder->orLike($item, $this->request->getPost('search')['value']);
+					$this->builder->orLike($item, $request->getPost('search')['value']);
 				}
 				if (count($this->column_search) - 1 == $i) $this->builder->groupEnd();
 			}
 			$i++;
 		}
 
-		if (isset($this->request->getPost('order')) && count($this->request->getPost('order')))
-			$this->builder->orderBy($this->request->getPost('order')['0']['column'], $this->request->getPost('order')['0']['dir']);
+		if ($request->getPost('order') && count($request->getPost('order')))
+			$this->builder->orderBy($request->getPost('order')['0']['column'], $request->getPost('order')['0']['dir']);
 	}
 
 	public function get_datatables()
 	{
+		$request = Services::request();
 		$this->_set_sql_builder();
-		if ($this->request->getPost('length') != -1)
-			$this->builder->limit($this->request->getPost('length'), $this->request->getPost('start'));
+		if ($request->getPost('length') != -1)
+			$this->builder->limit($request->getPost('length'), $request->getPost('start'));
 		$qry = $this->builder->get();
 		return $qry->getResult();
 	}
@@ -115,24 +115,28 @@ class MyModel extends Model
 
 	public function tambah_data($data)
 	{
-		if (is_multidimension($data)) $this->builder->insertBatch($data);
-		else $this->builder->insert($data);
+		$sql = $this->db->table($this->table);
+		if (is_multidimension($data)) $sql->insertBatch($data);
+		else $sql->insert($data);
 	}
 	/* $where = ['key' => $_POST['key']]; */
 	public function ubah_data($where, $data)
 	{
-		$this->builder->where($where);
-		$this->builder->update($data);
+		$sql = $this->db->table($this->table);
+		$sql->where($where);
+		$sql->update($data);
 	}
 	public function hapus_data($where)
 	{
-		$this->builder->where($where);
-		$this->builder->delete();
+		$sql = $this->db->table($this->table);
+		$sql->where($where);
+		$sql->delete();
 	}
 	public function ambil_data($where = null)
 	{
-		if ($where) $this->builder->where($where);
-		$qry = $this->builder->get();
+		$sql = $this->db->table($this->table);
+		if ($where) $sql->where($where);
+		$qry = $sql->get();
 		if ($where) return $qry->getRowArray();
 		else return $qry->getResultArray();
 	}

@@ -173,7 +173,7 @@
 		});
 	}
 
-	function info(key) {
+	function infoUser(key) {
 		var fd = {};
 		fd['id'] = key;
 		fd['<?= csrf_token() ?>'] = '<?= csrf_hash(); ?>';
@@ -190,6 +190,31 @@
 				if (response.user) {
 					$('.viewmodal').html(response.user).show();
 					$('#info_user').modal('show');
+				}
+			},
+			error: function(xhr, ajaxOptions, thrownError) {
+				alert(xhr.status + "\n" + xhr.responseText + "n" + thrownError);
+			}
+		});
+	}
+
+	function delUser(key) {
+		var fd = {};
+		fd['id'] = key;
+		fd['<?= csrf_token() ?>'] = '<?= csrf_hash(); ?>';
+		$.ajax({
+			url: "<?= site_url('pengguna/form_del_user') ?>",
+			headers: {
+				'X-Requested-With': 'XMLHttpRequest'
+			},
+			type: "POST",
+			dataType: "JSON",
+			data: fd,
+			success: function(response) {
+				console.log(response.user);
+				if (response.user) {
+					$('.viewmodal').html(response.user).show();
+					$('#modal_del_user').modal('show');
 				}
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
