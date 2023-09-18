@@ -223,6 +223,31 @@
 		});
 	}
 
+	function editUser(key) {
+		var fd = {};
+		fd['id'] = key;
+		fd['<?= csrf_token() ?>'] = '<?= csrf_hash(); ?>';
+		$.ajax({
+			url: "<?= site_url('pengguna/form_edit_user') ?>",
+			headers: {
+				'X-Requested-With': 'XMLHttpRequest'
+			},
+			type: "POST",
+			dataType: "JSON",
+			data: fd,
+			success: function(response) {
+				console.log(response.user);
+				if (response.user) {
+					$('.viewmodal').html(response.user).show();
+					$('#edit_user').modal('show');
+				}
+			},
+			error: function(xhr, ajaxOptions, thrownError) {
+				alert(xhr.status + "\n" + xhr.responseText + "n" + thrownError);
+			}
+		});
+	}
+
 	$(document).ready(function() {
 		var dtable_users; // agar dapat reload datatables : dtable.ajax.reload(null, false);
 		list_users();

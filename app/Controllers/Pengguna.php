@@ -209,4 +209,39 @@ class Pengguna extends BaseController
 			echo json_encode($response);
 		} else throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
 	}
+	public function form_edit_user()
+	{
+		if ($this->request->isAJAX()) {
+			if (!$this->request->is('post'))
+				throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s405');
+			$where = ['id' => $this->request->getPost('id')];
+			$params['table'] = 'users';
+			$params['primaryKey'] = 'id';
+			$ssp = new MyModel($params);
+			$row = $ssp->ambil_data($where);
+			$data = [
+				'id' => $row['id'],
+				'email' => $row['email'],
+				'username' => $row['username'],
+				'password_hash' => $row['password_hash'],
+				'active' => $row['active'],
+				'created_at' => $row['created_at'],
+				'updated_at' => $row['updated_at']
+			];
+			$output = [
+				'user' => view('pengguna/modal_edit_user', $data)
+			];
+			echo json_encode($output);
+		} else {
+			throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
+		}
+	}
+	public function update_user()
+	{
+		if ($this->request->isAJAX()) {
+			if (!$this->request->is('post'))
+				throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s405');
+			dd($_POST);
+		} else throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
+	}
 }

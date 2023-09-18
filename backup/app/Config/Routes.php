@@ -28,6 +28,8 @@ $routes->post('pengguna/simpan_users', 'Pengguna::simpan_users');
 $routes->post('pengguna/info_user', 'Pengguna::info_user');
 $routes->post('pengguna/form_del_user', 'Pengguna::form_del_user');
 $routes->post('pengguna/hapus_user', 'Pengguna::hapus_user');
+$routes->post('pengguna/form_edit_user', 'Pengguna::form_edit_user');
+$routes->post('pengguna/update_user', 'Pengguna::update_user');
 
 
 $routes->get('error/(:any)', 'Error::show/$1');
