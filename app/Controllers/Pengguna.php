@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\MyModel;
+use App\Models\SspModel;
 use Config\Services;
 
 class Pengguna extends BaseController
@@ -21,7 +21,7 @@ class Pengguna extends BaseController
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
 			$params['column_search'] = ['email', 'username'];
-			$ssp = new MyModel($params);
+			$ssp = new SspModel($params);
 			$lists = $ssp->get_datatables();
 			$data = [];
 			$no = $this->request->getPost('start');
@@ -128,7 +128,7 @@ class Pengguna extends BaseController
 				$params['table'] = 'users';
 				$params['primaryKey'] = 'id';
 				$params['allowedFields'] = ['email', 'username', 'password_hash', 'active', 'created_at', 'updated_at'];
-				$ssp = new MyModel($params);
+				$ssp = new SspModel($params);
 				//$ssp->save($data);
 				$ssp->tambah_data($data);
 				$response = [
@@ -148,7 +148,7 @@ class Pengguna extends BaseController
 			$where = ['id' => $this->request->getPost('id')];
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
-			$ssp = new MyModel($params);
+			$ssp = new SspModel($params);
 			$row = $ssp->ambil_data($where);
 			$data = [
 				'id' => $row['id'],
@@ -173,7 +173,7 @@ class Pengguna extends BaseController
 			$where = ['id' => $this->request->getPost('id')];
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
-			$ssp = new MyModel($params);
+			$ssp = new SspModel($params);
 			$row = $ssp->ambil_data($where);
 			$data = [
 				'id' => $row['id'],
@@ -201,7 +201,7 @@ class Pengguna extends BaseController
 			$username = $this->request->getPost('username');
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
-			$ssp = new MyModel($params);
+			$ssp = new SspModel($params);
 			$ssp->hapus_data($where);
 			$response = [
 				'sukses' => 'Username : ' . $username
@@ -217,7 +217,7 @@ class Pengguna extends BaseController
 			$where = ['id' => $this->request->getPost('id')];
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
-			$ssp = new MyModel($params);
+			$ssp = new SspModel($params);
 			$row = $ssp->ambil_data($where);
 			$data = [
 				'id' => $row['id'],
@@ -252,7 +252,7 @@ class Pengguna extends BaseController
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
 			$params['allowedFields'] = ['active', 'created_at', 'updated_at'];
-			$ssp = new MyModel($params);
+			$ssp = new SspModel($params);
 			$ssp->ubah_data($where, $data);
 			$response = [
 				'sukses' => 'Username : ' . $username
