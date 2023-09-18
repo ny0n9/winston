@@ -48,8 +48,11 @@ Vagrantfile
 # Email Config
 app/Config/Email.php
 
-# backup Email Config
-backup/app/Config/Email.php
+# backup
+backup/
+*.sh
+add_*.php
+test_*.php
 
 #-------------------------
 # Temporary Files

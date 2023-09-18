@@ -241,7 +241,23 @@ class Pengguna extends BaseController
 		if ($this->request->isAJAX()) {
 			if (!$this->request->is('post'))
 				throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s405');
-			dd($_POST);
+			$where = ['id' => $this->request->getPost('id')];
+			$username = $this->request->getPost('username');
+			$current_date = date('Y-m-d H:i:s');
+			$data = [
+				'active' => $this->request->getPost('active'),
+				'created_at' => $current_date,
+				'updated_at' => $current_date
+			];
+			$params['table'] = 'users';
+			$params['primaryKey'] = 'id';
+			$params['allowedFields'] = ['active', 'created_at', 'updated_at'];
+			$ssp = new MyModel($params);
+			$ssp->ubah_data($where, $data);
+			$response = [
+				'sukses' => 'Username : ' . $username
+			];
+			echo json_encode($response);
 		} else throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s403');
 	}
 }
