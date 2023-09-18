@@ -47,9 +47,9 @@ Cara pakai di Controller :<br>
 
 Demo Datatables Server Side menggunakan database sqlite3 dapat dilihat pada menu Pengaturan->Pengguna->Kelola Pengguna<br>
 Demo users :<br>
-&emsp; master@winston.lan master P455w0rd5<br>
-&emsp; admin@winston.lan admin P455w0rd5<br>
-&emsp; umum@winston.lan umum P455w0rd5<br>
+&emsp; master@winston.web.id master P455w0rd5<br>
+&emsp; admin@winston.web.id admin P455w0rd5<br>
+&emsp; umum@winston.web.id umum P455w0rd5<br>
 
 Datatables Server Side pada repository ini juga sudah menerapak fixed header pada bootstrap navbar sticky-top
 untuk menampilkannya tambahkan 25 data pada users table dengan menjalan perintah dibawah ini pada folder instalasi :<br>

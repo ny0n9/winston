@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\SspModel;
+use App\Models\MyModel;
 use Config\Services;
 
 class Pengguna extends BaseController
@@ -20,7 +20,8 @@ class Pengguna extends BaseController
 				throw new \CodeIgniter\HTTP\Exceptions\RedirectException('error/s405');
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
-			$ssp = new SspModel($params);
+			$params['column_search'] = ['email', 'username'];
+			$ssp = new MyModel($params);
 			$lists = $ssp->get_datatables();
 			$data = [];
 			$no = $this->request->getPost('start');
@@ -127,7 +128,7 @@ class Pengguna extends BaseController
 				$params['table'] = 'users';
 				$params['primaryKey'] = 'id';
 				$params['allowedFields'] = ['email', 'username', 'password_hash', 'active', 'created_at', 'updated_at'];
-				$ssp = new SspModel($params);
+				$ssp = new MyModel($params);
 				//$ssp->save($data);
 				$ssp->tambah_data($data);
 				$response = [
@@ -147,7 +148,7 @@ class Pengguna extends BaseController
 			$where = ['id' => $this->request->getPost('id')];
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
-			$ssp = new SspModel($params);
+			$ssp = new MyModel($params);
 			$row = $ssp->ambil_data($where);
 			$data = [
 				'id' => $row['id'],
@@ -172,7 +173,7 @@ class Pengguna extends BaseController
 			$where = ['id' => $this->request->getPost('id')];
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
-			$ssp = new SspModel($params);
+			$ssp = new MyModel($params);
 			$row = $ssp->ambil_data($where);
 			$data = [
 				'id' => $row['id'],
@@ -200,7 +201,7 @@ class Pengguna extends BaseController
 			$username = $this->request->getPost('username');
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
-			$ssp = new SspModel($params);
+			$ssp = new MyModel($params);
 			$ssp->hapus_data($where);
 			$response = [
 				'sukses' => 'Username : ' . $username

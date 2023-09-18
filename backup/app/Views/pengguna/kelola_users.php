@@ -214,7 +214,7 @@
 				console.log(response.user);
 				if (response.user) {
 					$('.viewmodal').html(response.user).show();
-					$('#modal_del_user').modal('show');
+					$('#del_user').modal('show');
 				}
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
