@@ -21,6 +21,7 @@ class Pengguna extends BaseController
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
 			$params['column_search'] = ['email', 'username'];
+			$params['column_order'] = ['id', 'id', 'email', 'username', 'active', 'id', 'created_at', 'updated_at', 'id'];
 			$ssp = new SspModel($params);
 			$lists = $ssp->get_datatables();
 			$data = [];

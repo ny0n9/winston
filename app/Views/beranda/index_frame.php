@@ -15,6 +15,7 @@
 <?= $this->endSection(); ?><!-- Section pageMenu -->
 
 <?= $this->section('pageContent'); ?>
+<!-- Isi halaman utama disini -->
 <section class="container-fluid">
 	<article class="row">
 		<div class="col-12 jumbotron">
@@ -94,7 +95,6 @@
 	</article>
 </section>
 
-<!-- Isi halaman utama disini -->
 <?= $this->endSection(); ?><!-- Section main -->
 
 <?= $this->section('pageScripts'); ?>

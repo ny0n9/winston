@@ -43,6 +43,7 @@ class SspModel extends Model
 	// SSP
 	protected $db;
 	protected $column_search = [];
+	protected $column_order = [];
 	protected $builder;
 	protected $where;
 
@@ -61,6 +62,7 @@ class SspModel extends Model
 			if (isset($params['primaryKey'])) $this->primaryKey = $params['primaryKey'];
 			if (isset($params['allowedFields'])) $this->allowedFields = $params['allowedFields'];
 			if (isset($params['column_search'])) $this->column_search = $params['column_search'];
+			if (isset($params['column_order'])) $this->column_order = $params['column_order'];
 		}
 		parent::__construct($this->db);
 		$this->builder = $this->db->table($this->table);
@@ -89,8 +91,11 @@ class SspModel extends Model
 			$i++;
 		}
 
-		if ($request->getPost('order') && count($request->getPost('order')))
-			$this->builder->orderBy($request->getPost('order')['0']['column'], $request->getPost('order')['0']['dir']);
+		if ($request->getPost('order') && count($request->getPost('order'))) {
+			$key = $request->getPost('order')['0']['column'];
+			$dir = $request->getPost('order')['0']['dir'];
+			$this->builder->orderBy($this->column_order[$key], $dir);
+		} else $this->builder->orderBy($this->column_order[1], 'ASC');
 	}
 
 	public function get_datatables()

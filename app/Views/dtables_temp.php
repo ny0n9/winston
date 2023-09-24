@@ -11,6 +11,7 @@
 <!-- Isi CSS tambahan disini -->
 <link href="<?= base_url(); ?>/public/css/jquery.dataTables.min.css" rel="stylesheet">
 <link href="<?= base_url(); ?>/public/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<link href="<?= base_url(); ?>/public/css/fixedHeader.bootstrap5.min.css" rel="stylesheet">
 <?= $this->endSection(); ?><!-- Section pageStyles -->
 
 <?= $this->section('pageMenu'); ?>
@@ -107,6 +108,7 @@
 <!-- Isi javascript tambahan disini -->
 <script src="<?= base_url(); ?>/public/js/jquery.dataTables.min.js"></script>
 <script src="<?= base_url(); ?>/public/js/dataTables.bootstrap5.min.js"></script>
+<script src="<?= base_url(); ?>/public/js/dataTables.fixedHeader.min.js"></script>
 <!-- Untuk menggunakan fitur render : DataTable.render.datetime -->
 <script src="<?= base_url(); ?>/public/js/moment.min.js"></script>
 
