@@ -76,11 +76,11 @@ class SspModel extends Model
 	private function _set_sql_builder()
 	{
 		$request = Services::request();
-		if (isset($this->where)) $this->builder->where($this->where);
 		$i = 0;
 		foreach ($this->column_search as $item) {
 			if ($request->getPost('search')['value']) {
 				if ($i === 0) {
+					if (!empty($this->where)) $this->builder->where($this->where);
 					$this->builder->groupStart();
 					$this->builder->like($item, $request->getPost('search')['value']);
 				} else {

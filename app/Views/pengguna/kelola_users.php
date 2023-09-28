@@ -18,11 +18,6 @@
 	table.dataTable {
 		min-width: 100%;
 	}
-
-	table.dataTable thead>tr {
-		color: #fff;
-		background-color: black !important;
-	}
 </style>
 <?= $this->endSection(); ?><!-- Section pageStyles -->
 
@@ -58,15 +53,15 @@
 				<table class="table table-striped table-bordered align-middle" id="data_users">
 					<thead class="table-dark">
 						<tr>
-							<th id='0'>No</th>
-							<th id='1'>ID</th>
-							<th id='2'>Email</th>
-							<th id='3'>Username</th>
-							<th id='4'>Password Hash</th>
-							<th id='5'>Aktif</th>
-							<th id='6'>Created At</th>
-							<th id='7'>Updated At</th>
-							<th id='8'>Aksi</th>
+							<th id='0'>Aksi</th>
+							<th id='1'>No</th>
+							<th id='2'>ID</th>
+							<th id='3'>Email</th>
+							<th id='4'>Username</th>
+							<th id='5'>Password Hash</th>
+							<th id='6'>Aktif</th>
+							<th id='7'>Created At</th>
+							<th id='8'>Updated At</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -124,50 +119,41 @@
 				}
 			},
 			columnDefs: [{
-					targets: 0,
-					orderable: false,
-					visible: true
-				},
-				{
-					targets: 1,
-					visible: true
-				},
-				{
-					targets: 2,
-					visible: true
-				},
-				{
-					targets: 3,
-					visible: true
-				},
-				{
-					targets: 4,
-					visible: false
-				},
-				{
-					targets: 5,
-					visible: true
-				},
-				{
-					targets: 6,
-					visible: true,
-					render: DataTable.render.datetime('DD/MM/YYYY')
-				},
-				{
-					targets: 7,
-					visible: true,
-					render: DataTable.render.datetime('DD/MM/YYYY')
-				},
-				{
-					targets: 8,
-					orderable: false,
-					class: "nowrap"
-				}
-			],
+				targets: 0,
+				orderable: false,
+				class: "nowrap"
+			}, {
+				targets: 1,
+				orderable: false,
+				visible: true
+			}, {
+				targets: 2,
+				visible: true
+			}, {
+				targets: 3,
+				visible: true
+			}, {
+				targets: 4,
+				visible: true
+			}, {
+				targets: 5,
+				visible: false
+			}, {
+				targets: 6,
+				visible: true
+			}, {
+				targets: 7,
+				visible: true,
+				render: DataTable.render.datetime('DD/MM/YYYY')
+			}, {
+				targets: 8,
+				visible: true,
+				render: DataTable.render.datetime('DD/MM/YYYY')
+			}],
 			paging: true,
 			pagingType: 'full_numbers',
 			order: [
-				[1, 'asc']
+				[2, 'asc']
 			],
 			scrollX: true
 		});

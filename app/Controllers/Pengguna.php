@@ -21,7 +21,7 @@ class Pengguna extends BaseController
 			$params['table'] = 'users';
 			$params['primaryKey'] = 'id';
 			$params['column_search'] = ['email', 'username'];
-			$params['column_order'] = ['id', 'id', 'email', 'username', 'active', 'id', 'created_at', 'updated_at', 'id'];
+			$params['column_order'] = ['', '', 'id', 'email', 'username', 'password_hash', 'active', 'created_at', 'updated_at'];
 			$ssp = new SspModel($params);
 			$lists = $ssp->get_datatables();
 			$data = [];
@@ -32,6 +32,7 @@ class Pengguna extends BaseController
 				$btnDel = "<button type='button' class='btn btn-sm btn-danger' onclick=\"delUser('" . $list->id . "', '" . $list->username . "')\"><i class='fa fa-trash'></i></button>";
 				$btnInfo = "<button type=\"button\" class=\"btn btn-sm btn-info\" onclick=\"infoUser('" . $list->id . "')\"><i class=\"fa fa-info-circle\"></i></button>";
 				$row = [];
+				$row[] = $btnInfo . " " . $btnEdit . " " . $btnDel;
 				$row[] = $no;
 				$row[] = $list->id;
 				$row[] = $list->email;
@@ -40,7 +41,6 @@ class Pengguna extends BaseController
 				$row[] = $list->active;
 				$row[] = $list->created_at;
 				$row[] = $list->updated_at;
-				$row[] = $btnInfo . " " . $btnEdit . " " . $btnDel;
 				$data[] = $row;
 			}
 			$response = [

@@ -73,11 +73,11 @@ class MyModel extends Model
 	*/
 	private function _set_sql_builder()
 	{
-		if (isset($this->where)) $this->builder->where($this->where);
 		$i = 0;
 		foreach ($this->column_search as $item) {
 			if ($_POST['search']['value']) {
 				if ($i === 0) {
+					if (!empty($this->where)) $this->builder->where($this->where);
 					$this->builder->groupStart();
 					$this->builder->like($item, $_POST['search']['value']);
 				} else {
