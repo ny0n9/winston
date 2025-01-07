@@ -92,6 +92,7 @@
 			untuk menampilkannya tambahkan 25 data pada users table dengan menjalan perintah dibawah ini pada folder instalasi :<br>
 			&emsp; php spark db:seed SeedUsers
 		</div>
+		APPPATH = <?= APPPATH ?> FCPATH = <?= FCPATH ?> ROOTPATH = <?= ROOTPATH ?>
 	</article>
 </section>
 

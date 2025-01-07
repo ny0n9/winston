@@ -10,7 +10,7 @@
 	<link rel="icon" href="<?= base_url('public/favicon.ico'); ?>">
 	<link rel="icon" type="image/x-icon" href="<?= base_url('public/favicon.ico'); ?>">
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?= base_url('public/favicon.ico'); ?>">
-	<link href="<?= base_url('public/css/bs532-styles.min.css'); ?>" rel="stylesheet">
+	<link href="<?= base_url('public/css/bs533-styles.min.css'); ?>" rel="stylesheet">
 	<link href="<?= base_url('public/style.css'); ?>" rel="stylesheet">
 	<?= $this->renderSection('pageStyles') ?>
 </head>
@@ -23,7 +23,7 @@
 		<?= $this->renderSection('pageContent') ?>
 	</main>
 
-	<footer class="container-fluid my-3 bg-greenwin">
+	<footer class="container-fluid mt-3 bg-greenwin">
 		<div class="row text-center">
 			<div class="col-sm">Page rendered in {elapsed_time} seconds</div>
 			<div class="col-sm">@2021 by <a href="https://winston.lan/" target="_blank">Winston Sahusilawane</a></div>
@@ -44,7 +44,7 @@
 	</footer>
 
 	<script src="<?= base_url('public/js/jquery.min.js'); ?>"></script>
-	<script src="<?= base_url('public/js/bs532-scripts.min.js'); ?>"></script>
+	<script src="<?= base_url('public/js/bs533-scripts.min.js'); ?>"></script>
 	<?= $this->renderSection('pageScripts') ?>
 </body>
 

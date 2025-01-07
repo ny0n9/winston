@@ -12,7 +12,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 
 <i onclick="topFunction()" id="topBtn" class="fa fa-arrow-circle-up fa-lg"></i>
 
-<nav class="navbar navbar-expand-lg navbar-greenwin sticky-top bg-greenwin">
+<nav class="navbar navbar-expand-lg sticky-top">
 	<div class="container-fluid">
 		<a class="navbar-brand text-white" href="#"><i class="fa fa-home fa-lg"></i></a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						1 Level
 					</a>
-					<ul class="dropdown-menu dropdown-menu-greenwin">
+					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -39,7 +39,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						2 Level
 					</a>
-					<ul class="dropdown-menu dropdown-menu-greenwin">
+					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -47,7 +47,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 							<a class="dropdown-item" href="#">
 								Dropdown <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
 							</a>
-							<ul class="dropdown-menu dropdown-menu-greenwin">
+							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
 								<li><a class="dropdown-item" href="#">Something else here</a></li>

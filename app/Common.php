@@ -57,6 +57,7 @@ if(!function_exists('getShortBulan')) {
 }
 if(!function_exists('jMY_DateStr')) {
     function jMY_DateStr($tanggal) {
+        if(empty($tanggal)) return '';
         $tgl = substr($tanggal, 0, 2);
         $bln = substr($tanggal, 3, 2);
         $thn = substr($tanggal, 6, 4);
@@ -66,6 +67,7 @@ if(!function_exists('jMY_DateStr')) {
 }
 if(!function_exists('ddMY_DateStr')) {
     function ddMY_DateStr($tanggal) {
+        if(empty($tanggal)) return '';
         //yyyy-mm-dd ke dd-mm-yyyy
         $tgl = substr($tanggal, 8, 2);
         $bln = substr($tanggal, 5, 2);
@@ -75,6 +77,7 @@ if(!function_exists('ddMY_DateStr')) {
 }
 if(!function_exists('ddMY_DateTimeStr')) {
     function ddMY_DateTimeStr($tanggal) {
+        if(empty($tanggal)) return '';
         //yyyy-mm-dd HH:mm:ss ke dd-mm-yyyy HH:mm:ss
 		$time = substr($tanggal, 11, 8); 
         $tgl = substr($tanggal, 8, 2);
@@ -86,6 +89,7 @@ if(!function_exists('ddMY_DateTimeStr')) {
 
 if(!function_exists('ddMYG_DateStr')) {
     function ddMYG_DateStr($tanggal) {
+        if(empty($tanggal)) return '';
         //yyyy-mm-dd ke dd/mm/yyyy
         $tgl = substr($tanggal, 8, 2);
         $bln = substr($tanggal, 5, 2);
@@ -96,6 +100,7 @@ if(!function_exists('ddMYG_DateStr')) {
 if(!function_exists('ddMY_DateSql')) {
     // dd-mm-yyyy ke yyyy-mm-dd
     function ddMY_DateSql($tanggal) {
+        if(empty($tanggal)) return '';
         //$tanggal = yyyy-mm-dd
         $tgl = substr($tanggal, 0, 2);
         $bln = substr($tanggal, 3, 2);
@@ -106,6 +111,7 @@ if(!function_exists('ddMY_DateSql')) {
 if(!function_exists('ddMYG_DateSql')) {
     //dari dd/mm/yyyy ke yyyy-mm-dd
     function ddMYG_DateSql($tanggal) {
+        if(empty($tanggal)) return '';
         $tgl = substr($tanggal, 0, 2);
         $bln = substr($tanggal, 3, 2);
         $thn = substr($tanggal, 6, 4);
@@ -114,6 +120,7 @@ if(!function_exists('ddMYG_DateSql')) {
 }
 if(!function_exists('ddMYHH_DateStr')) {
     function ddMYHH_DateStr($tanggal) {
+        if(empty($tanggal)) return '';
         //$tanggal = yyyy-mm-dd hh:mm:ss
         $jam = substr($tanggal, 11, 8);
         $tgl = substr($tanggal, 8, 2);
@@ -203,20 +210,11 @@ if (!function_exists('checkPassword')) {
 if (!function_exists('uri_title')) {
     function uri_title() {
         $uri = $_SERVER['REQUEST_URI'];
-        switch ($uri) {
-            case '/login':
-                $result = 'Form Login';
-                break;
-            case '/register':
-                $result = 'Form Registrasi';
-                break;
-            case '/forgot':
-                $result = 'Form Lupa Password';
-                break;
-            default:
-                $result = 'Proses Otentikasi';
-                break;
-        }
+        if (str_contains($uri, 'login')) $result = 'Form Login';
+        else if (str_contains($uri, 'register')) $result = 'Form Registrasi';
+        else if (str_contains($uri, 'forgot')) $result = 'Form Lupa Password';
+        else if (str_contains($uri, 'reset')) $result = 'Form Reset Password';
+        else $result = 'Proses Otentikasi';
         return $result;
     }
 }

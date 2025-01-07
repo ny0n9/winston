@@ -12,22 +12,22 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 
 <i onclick="topFunction()" id="topBtn" class="fa fa-arrow-circle-up fa-lg"></i>
 
-<nav class="navbar navbar-expand-lg navbar-greenwin sticky-top bg-greenwin">
+<nav class="navbar navbar-expand-lg sticky-top">
 	<div class="container-fluid">
-		<a class="navbar-brand text-white" href="/"><i class="fa fa-home fa-lg"></i></a>
+		<a class="navbar-brand text-white <?= setActive($slug, '') ?>" href="/"><i class="fa fa-home fa-lg"></i></a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="text-white"><i class="fa fa-bars fa-lg"></i></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
 			<ul class="navbar-nav me-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="<?= site_url('beranda/about') ?>">Icons</a>
+					<a class="nav-link <?= setActive($slug, 'beranda/about') ?>" href="<?= site_url('beranda/about') ?>">Icons</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Master Table
 					</a>
-					<ul class="dropdown-menu dropdown-menu-greenwin">
+					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -38,7 +38,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Akademik
 					</a>
-					<ul class="dropdown-menu dropdown-menu-greenwin">
+					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -46,7 +46,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 							<a class="dropdown-item" href="#">
 								Dropdown <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
 							</a>
-							<ul class="dropdown-menu dropdown-menu-greenwin">
+							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
 								<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -59,7 +59,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Informasi
 					</a>
-					<ul class="dropdown-menu dropdown-menu-greenwin">
+					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="https://getbootstrap.com/">Bootstrap</a></li>
 						<li><a class="dropdown-item" href="https://codeigniter.com/">Codeigniter</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -67,7 +67,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 							<a class="dropdown-item" href="#">
 								Dropdown <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
 							</a>
-							<ul class="dropdown-menu dropdown-menu-greenwin">
+							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
 								<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -80,7 +80,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Pengaturan
 					</a>
-					<ul class="dropdown-menu dropdown-menu-greenwin">
+					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="#">Action</a></li>
 						<li><a class="dropdown-item" href="#">Another action</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -88,7 +88,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 							<a class="dropdown-item" href="#">
 								Pengguna <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
 							</a>
-							<ul class="dropdown-menu dropdown-menu-greenwin">
+							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="<?= site_url('pengguna'); ?>">Kelola Pengguna</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
 								<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -100,7 +100,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Dashboard
 					</a>
-					<ul class="dropdown-menu dropdown-menu-greenwin">
+					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="<?= site_url('beranda/chartjs2') ?>">ChartJS v2.9.4</a></li>
 						<li><a class="dropdown-item" href="<?= site_url('beranda/chartjs3') ?>">ChartJS v3.9.1</a></li>
 						<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -108,7 +108,7 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 							<a class="dropdown-item" href="#">
 								Dropdown <span class="float-end custom-toggle-arrow"><i class="fa fa-caret-right"></i></span>
 							</a>
-							<ul class="dropdown-menu dropdown-menu-greenwin">
+							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
 								<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -138,4 +138,5 @@ $slug = substr($_SERVER['REQUEST_URI'], 1);
 			<div class="col-12 bg-info text-white text-end">Anda Masuk Sebagai : <?= user()->username; ?></div>
 		</div>
 	</div>
+	<?= var_dump($_SESSION); ?>
 <?php endif; ?>
